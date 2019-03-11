@@ -1,0 +1,79 @@
+Geomapping with Pyecharts(Echarts.js)
+
+Abstract
+
+The talk present the work in creating thousands of static map assets for data analysts and scientists who uses pyecharts, a python interface to Echarts.js.
+
+
+Description
+
+
+There exists a need for a readily available maps for python developers who are not yet familar with geo-information processing.
+The need could simply be to draw a Choropleth map that illustrates the product sales in different regions of a country. However,
+this need could potentially ruin a few weekends of this particular developer, because the amount of research work is huge.
+Sometimes, this need is dropped because before the Choropleth map will be drawn, the deadline for the presentation is passed.
+
+Hence the open source effort to satisfy this need started. Pyecharts user could instantly use the map assets of more than 200
+countries of the world, and thousands of Chinese regions: 2883 countries/city districts, 370 provincial cities,
+28 provinces/automous regions of China.
+
+The talk covers the following topics:
+
+1. the techniques used in creating the existing mapping assets
+2. the integration of echarts.js with python, especially with jupyter notebook
+3. the way to create your own map assets
+
+
+Using javascript tool-chain in editing and preparing geojson for your python 
+
+The talk presents using publicly available an alternative way of to bring in creating geomapping assets
+
+
+Pyecharts is a python interface to Echarts, a javascript charting library. 
+
+Introduction
+
+Geomapping with pyecharts
+
+2) What's advantage using pyecharts/echarts?
+
+1) free of geo-spacial views, easier to get along with d3
+2) interactivity comes for free
+    a. zooming
+    b. click
+
+The existing static maps includes:
+
+Inside China, pyecharts has
+
+At provincal level: 23 provinces and 5 autonomous regions
+At city leve: 370 cities that has districts
+At county level: 2882 counties/city districts
+
+1) 213 countries and regions in the world
+
+And it has UK specialist mapping packages.
+
+2) How does it work 
+
+a. python interface
+b. jupyter note interface
+c. nteract interface
+d. jupyterlab
+
+3) how to create more maps
+
+Techniques
+
+1) UTF8 encoding -> take publicly avaiable geojson to echarts
+2) Provincial maps: to join neighbouring provinces together
+3) To create a regional China map:
+    group all proinces togather, resolve their border, then join them together
+
+
+4) To supply the mapping data to pyecharts, we need to create package
+
+a. create pure npm package
+b. create an encapsulation pkg package
+c. then publish/install
+d. use it.
