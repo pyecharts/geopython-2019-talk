@@ -1,0 +1,3 @@
+from pyecharts.charts import MapGlobe
+import pyecharts.options as opts
+

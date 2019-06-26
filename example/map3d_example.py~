@@ -1,0 +1,4 @@
+from pyecharts.charts import Map3D
+
+def draw_map3d():
+    Map3D().add_schema().render_notebook()
